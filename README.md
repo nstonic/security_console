@@ -37,8 +37,8 @@ DEBUG = false
 
 ```angular2html
 System check identified no issues (0 silenced).
-February TODAY
-Django version 3.2.**, using settings 'project.settings'
+{CURRENT DATE AND TIME}
+Django version 3.2, using settings 'project.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
