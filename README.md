@@ -11,7 +11,7 @@
 pip install -r requirements.txt
 ```
 
-- Для пробного заупска достаточно указать в файле `.env`, расположенном рядом с `manage.py` URL базы данных
+- Для пробного запуска достаточно указать в файле `.env`, расположенном рядом с `manage.py` URL базы данных
 
 ```angular2html
 DB_URL = 'postgres://USER:PASSWORD@HOST:PORT/NAME'
