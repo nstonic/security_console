@@ -10,24 +10,26 @@
 ```
 pip install -r requirements.txt
 ```
-- Настройки базы данных и сайта необходимо указать в файле `.env`, расположенном рядом с `manage.py`
-```angular2html
-# database
-HOST = 'my_host.org'
-PORT = '1234'
-NAME = 'db_name'
-USER = 'user'
-PASSWORD = 'password'
 
-# site
-SECRET_KEY = 'REPLACE_ME'
+- Для пробного заупска достаточно указать в файле `.env`, расположенном рядом с `manage.py` URL базы данных
+
+```angular2html
+DB_URL = 'postgres://USER:PASSWORD@HOST:PORT/NAME'
+```
+
+- В дальнейшем в этот файл можно добавить настройки для **ALLOWED_HOSTS** и **SECRET_KEY**. А также **DEBUG** перевести
+  в *False*
+
+```angular2html
+ALLOWED_HOSTS = ['my_host']
+SECRET_KEY = 'SECRET_KEY'
 DEBUG = false
 ```
 
 ### Как запустить
 
-Для запуска скрипта в командной строке перейдите в папку в которой лежит файл main.py. Затем запустите
-скрипт следующей командой
+Для запуска скрипта в командной строке перейдите в папку в которой лежит файл main.py. Затем запустите скрипт следующей
+командой
 
   ```
   python manage.py runserver
